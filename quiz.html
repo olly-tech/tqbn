@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> TQBN:Quiz </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="home page for navigating through a Manchester based book review site for LGBT+ people">
+        <meta name="keywords" content="LGBT+, queer, 18-25, 25+, adults, books,YA, young adult, novels, fiction, non-fiction, reviews">
+        <link rel="icon" type="image/png" href="Images/icon.png">
+        <script src="https://kit.fontawesome.com/602bc5cb2d.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bookgallery.html">Book Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a class="active" href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+        
+        <header class="header">
+            <h1>Quiz</h1>
+            <h2>The Queer Book Nook</h2>
+        </header>
+        
+        <main class="grid-container">
+            <section class="paragraph-index"> <!--PARAGRAPH-->
+                <h2 style="text-align: center;"> Which Book Should I Read? </h2>
+                <img class="quiz-image" src="Images/coming-soon-percy-jackson.png" alt="quiz book cover image">
+                <p style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> intro to quiz </p>
+            </section>
+            
+            <section class="quiz-index">
+                <form name="quiz">
+                    <br>
+                    <fieldset>
+                        <legend>What is your favourite colour?</legend>
+                        <input type="radio" name="colour" id="pink" value="pink">
+                        <label for = "pink">Pink</label>
+
+                        <input type="radio" name="colour" id="blue" value="blue">
+                        <label for = "blue">Blue</label>
+
+                        <input type="radio" name="colour" id="yellow" value="yellow">
+                        <label for = "yellow">Yellow</label>
+
+                        <input type="radio" name="colour" id="green" value="green">
+                        <label for = "green">Green</label>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>What is your favourite animal?</legend>
+                        <input type="radio" name="animal" id="red-panda" value="red-panda">
+                        <label for = "red-panda">Red Panda</label>
+
+                        <input type="radio" name="animal" id="gorilla" value="gorilla">
+                        <label for = "gorilla">Gorilla</label>
+
+                        <input type="radio" name="animal" id="jaguar" value="jaguar">
+                        <label for = "jaguar">Jaguar</label>
+
+                        <input type="radio" name="animal" id="giraffe" value="giraffe">
+                        <label for = "giraffe">Giraffe</label>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>What is your favourite music?</legend>
+                        <input type="radio" name="music" id="pop" value="pop">
+                        <label for = "pop">Pop</label>
+
+                        <input type="radio" name="music" id="hiphop" value="hiphop">
+                        <label for = "hiphop">Hip Hop</label>
+
+                        <input type="radio" name="music" id="rock" value="rock">
+                        <label for = "rock">Rock</label>
+
+                        <input type="radio" name="music" id="metal" value="metal">
+                        <label for = "metal">Metal</label>
+                    </fieldset>
+
+                    <br>
+                    
+                    <fieldset>
+                        <legend>What is your favourite hobby?</legend>
+                        <input type="radio" name="hobby" id="walk" value="walk">
+                        <label for = "walk">Walk</label>
+                        
+                        <input type="radio" name="hobby" id="read" value="read">
+                        <label for = "read">Read</label>
+                        
+                        <input type="radio" name="hobby" id="music" value="music">
+                        <label for = "music">Music</label>
+                        
+                        <input type="radio" name="hobby" id="exercise" value="exercise">
+                        <label for = "exercise">Exercise</label>
+                    </fieldset>
+
+                    <br>
+
+                    <button type="button" onclick="checkAnswers()">Submit</button>
+                </form>
+            </section>
+            <section class="answer-display">
+                <p id="answer"></p>
+            </section>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>

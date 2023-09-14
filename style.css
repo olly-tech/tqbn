@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;}
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vw;
+    background-color: lemonchiffon;}
+/*BODY/UNIVERSAL END*/
+
+/*OVERFLOW */
+body p {
+    overflow:hidden;
+    text-overflow: ellipsis;}
+body p:hover {
+    overflow:visible;}
+/*OVERFLOW*/
+
+/*HEADINGS*/
+body h2, body h3 {
+    font-family: monospace;
+    letter-spacing: 1vw;
+    font-size: 3vw;
+    color:rgb(72, 35, 9);
+    padding:0.25vw;
+    margin:0.5vw;}
+/*HEADINGS END*/
+
+.series-name {
+    font-style: oblique;
+    letter-spacing: 0.1vw;
+    opacity: 80%;
+    padding:0;
+}
+
+
+/* NAV BAR */
+ul.topnav {
+    font-size: 1.5vw;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: seagreen;
+    z-index: 6;
+}
+    
+ul.topnav li {float:left; border-right:1px solid lemonchiffon;}
+ul.topnav li a {
+    display:block;
+    color: lemonchiffon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+ul.topnav li a:hover:not(.active){
+    background-color:rgb(32, 101, 62);}
+ul.topnav li a.active {background-color: rgb(32, 101, 62);}
+ul.topnav input[type=text] {
+    float:right;
+    border:none;
+
+}
+@media screen and (max-width:600px) {
+    ul.topnav li.right, ul.topnav li {float:none; border-right:none;}
+    ul.topnav {position: -webkit-sticky;
+        position:sticky;
+        font-size: 3vw; line-height: 0%;}}
+
+/* NAV BAR END */
+
+/*HEADER*/
+.header {
+    max-width:100vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255,255,255, 0.3)), url(Images/RetroBG.jpg);
+    background-color: seagreen;
+    background-size: cover;
+    text-align: center;
+    font-size: 6vw;
+    color: rgb(72, 35, 9);
+    padding: 1vw;
+    padding-top:5vw;
+    line-height: 1vw;
+    font-family: monospace;
+}
+/*HEADER*/
+
+/*GRID CONTAINER*/
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.5vw;}
+
+/*GRID CONTAINER*/
+
+/*BOOK INTRO*/
+
+.img-book {
+    width:20vw;
+    float:left;
+    padding:2%;
+}
+.clearfix::after {
+    content: "";
+    clear:both;
+    display:table;
+}
+/**/
+
+/*STARS*/
+.stars {
+    color: goldenrod;
+}
+/**/
+
+/*QUOTE*/
+.quote {
+    text-indent: -0.5em;
+    font-style: italic;
+}
+@supports (hanging-punctuation: first) {
+    .quote {text-indent:0;
+    hanging-punctuation: first;}
+}
+
+/**/
+
+/*PARAGRAPH*/
+.paragraph, .book-intro {
+    grid-column: 1/span 8;
+    background-color: lemonchiffon;
+    padding:1vw;
+    margin:0.5vw;}
+/*PARAGRAPH*/
+
+/*INDEX GRID ADJUSTMENTS*/
+.paragraph-index, .bookgallery-index {
+    grid-column:1/span 13;
+}
+
+.quiz-index {
+    grid-column: 1/span 13;
+    text-align: center;
+}
+
+.answer-display {
+    grid-column: 1/span 13;
+    text-align:center;
+}
+
+.book-intro {
+    border-bottom: 0.5vw dashed seagreen;
+}
+
+/*BOOK GALLERY */
+.bookgallery img, .bookgallery-index img {
+    opacity:0.5;
+    width: 20vw;
+    height: 30vw;
+    object-fit: cover;
+    display: inline-block;
+    padding:0.25vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+.bookgallery img:hover, .bookgallery-index img:hover {
+    opacity:1.0;}
+.bookgallery, .bookgallery-index {
+    background-color: lemonchiffon;
+    padding:0.25vw;
+    margin:0.25vw;}
+.bookgallery {
+    grid-column: 1/span 8;
+}
+/*BOOK GALLERY */
+
+/*MISC IMAGES*/
+.quiz-image{
+    display:block;
+    width:25vw;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/*ASIDE*/
+.aside{
+    background-color: lemonchiffon;
+    grid-row:1/span 5;
+    grid-column: 9/span 3;
+    padding:1vw;
+    margin:0.25vw;
+    overflow-wrap:auto;
+    border-left: 0.5vw solid seagreen;
+}
+@media screen and (max-width:600px) {
+    .aside, .paragraph, .book-intro {float:none;border-left:none}
+    .paragraph, .aside, .book-intro {
+        grid-column: 1/span 13;
+    }
+    .aside {
+        border-top: 0.5vw solid seagreen;
+        grid-row-start: 8;
+    }
+
+}
+/*ASIDE*/
+
+
+/*QUIZ*/
+.quiz-index {
+    border-top: 0.5vw dashed saddlebrown;
+    padding:1vw;
+}
+
+fieldset {
+    border: 5px solid rgb(22, 83, 48);
+}
