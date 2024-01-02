@@ -1,43 +1,50 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-gb">
     <head>
         <link rel="stylesheet" href="style.css">
         <title> TQBN:Quiz </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="home page for navigating through a Manchester based book review site for LGBT+ people">
+        <meta name="description" content="quiz page for LGBT+ book review site">
         <meta name="keywords" content="LGBT+, queer, 18-25, 25+, adults, books,YA, young adult, novels, fiction, non-fiction, reviews">
-        <link rel="icon" type="image/png" href="Images/icon.png">
-        <script src="https://kit.fontawesome.com/602bc5cb2d.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="Images/icons&headers/icon.png">
         <script src="script.js"></script>
     </head>
 
     <body>
         <nav>
             <ul class="topnav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bookgallery.html">Book Gallery</a></li>
-                <li><a href="review.html">Reviews</a></li>
-                <li><a class="active" href="quiz.html">Quiz</a></li>
+              <li><a class="lred-fill" href="index.html">Home</a></li>
+              <li>
+                <a class="lyellow-fill" href="all-review.html">All Reviews</a>
+              </li>
+              <li><a class="lgreen-fill" href="review-tco.html">Featured Review</a></li>
+              <li><a class="active blue-fill" href="quiz.html">Quizzes</a></li>
             </ul>
-        </nav>
+          </nav>
         
         <header class="header">
-            <h1>Quiz</h1>
-            <h2>The Queer Book Nook</h2>
+            <h1>Quizzes</h1>
+            <h2 class="mini-header">The Queer Book Nook</h2>
         </header>
-        
+        <div>
+            <hr class="solid-divider red-border" />
+            <hr class="solid-divider yellow-border" />
+            <hr class="solid-divider green-border" />
+            <hr class="solid-divider blue-border" />
+            <hr class="solid-divider purple-border" />
+          </div>
         <main class="grid-container">
-            <section class="paragraph-index"> <!--PARAGRAPH-->
-                <h2 style="text-align: center;"> Which Book Should I Read? </h2>
-                <img class="quiz-image" src="Images/coming-soon-percy-jackson.png" alt="quiz book cover image">
-                <p style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> intro to quiz </p>
+            <section class="quiz-description"> <!--PARAGRAPH-->
+                <h2> Which Book Should I Read? </h2>
+                <br>
+                <img class="quiz-image" src="Images/book-covers/coming-soon-percy-jackson.png" alt="quiz book cover image">
+                <p id="result1" class="answer-display"></p>
             </section>
-            
             <section class="quiz-index">
-                <form name="quiz">
+                <form name="quiz1">
                     <br>
-                    <fieldset>
+                    <fieldset class="question1">
                         <legend>What is your favourite colour?</legend>
                         <input type="radio" name="colour" id="pink" value="pink">
                         <label for = "pink">Pink</label>
@@ -51,10 +58,8 @@
                         <input type="radio" name="colour" id="green" value="green">
                         <label for = "green">Green</label>
                     </fieldset>
-
                     <br>
-
-                    <fieldset>
+                    <fieldset class="question2">
                         <legend>What is your favourite animal?</legend>
                         <input type="radio" name="animal" id="red-panda" value="red-panda">
                         <label for = "red-panda">Red Panda</label>
@@ -68,10 +73,8 @@
                         <input type="radio" name="animal" id="giraffe" value="giraffe">
                         <label for = "giraffe">Giraffe</label>
                     </fieldset>
-
                     <br>
-
-                    <fieldset>
+                    <fieldset class="question3">
                         <legend>What is your favourite music?</legend>
                         <input type="radio" name="music" id="pop" value="pop">
                         <label for = "pop">Pop</label>
@@ -85,10 +88,8 @@
                         <input type="radio" name="music" id="metal" value="metal">
                         <label for = "metal">Metal</label>
                     </fieldset>
-
                     <br>
-                    
-                    <fieldset>
+                    <fieldset class="question4">
                         <legend>What is your favourite hobby?</legend>
                         <input type="radio" name="hobby" id="walk" value="walk">
                         <label for = "walk">Walk</label>
@@ -102,17 +103,48 @@
                         <input type="radio" name="hobby" id="exercise" value="exercise">
                         <label for = "exercise">Exercise</label>
                     </fieldset>
-
                     <br>
-
-                    <button type="button" onclick="checkAnswers()">Submit</button>
+                    <button type="button" class="submit-button" onclick="checkAnswers()">Submit</button>
                 </form>
-            </section>
-            <section class="answer-display">
-                <p id="answer"></p>
+                <br>
             </section>
         </main>
-
-        <footer></footer>
+        <footer class="footer">
+            <div>
+              <hr class="solid-divider red-border" />
+              <hr class="solid-divider yellow-border" />
+              <hr class="solid-divider green-border" />
+              <hr class="solid-divider blue-border" />
+              <hr class="solid-divider purple-border" />
+            </div>
+            <section>
+              <h2>© The Queer Book Nook 2023</h2>
+            </section>
+            <section class="image-credits">
+              <h3>Image Credits</h3>
+              <ul class="img-cred-list">
+                <li>
+                  Book Covers taken from <a
+                    href="https://www.waterstones.com/"
+                    target="_blank"
+                    >Waterstones</a>
+                </li>
+                <li>
+                  Header Image by
+                  <a
+                    href="https://unsplash.com/@edsonrosas?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    target="_blank"
+                    >Edson Rosas</a
+                  >
+                  on
+                  <a
+                    href="https://unsplash.com/photos/rainbow-book-art-R2GAnaP8fEk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    target="_blank"
+                    >Unsplash</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </footer>
     </body>
 </html>
