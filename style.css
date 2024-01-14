@@ -246,7 +246,7 @@ div.thumbnail {
 /*PARAGRAPH*/
 .paragraph {
     border-top: 0.2vw dashed var(--black);
-    padding: 0 1vw;
+    padding: 0.5em;
     grid-column: 1/10;}
 
 /*PARAGRAPH*/
@@ -258,6 +258,9 @@ div.thumbnail {
     }
     .book-intro, .all-reviews, .paragraph {
         grid-column: 1/13;
+    }
+    .paragraph {
+        padding:1em;
     }
 }
 
@@ -298,6 +301,10 @@ div.thumbnail {
 .answer-display {
     text-align:center;
     font-size: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 0.5vw;
+    margin:0.5vw;
 }
 
 
@@ -667,4 +674,11 @@ footer h3 {
 }
 .lpurple-fill {
     background-color: var(--lpurple);
+}
+
+/*ADDED NOW*/
+.quiz-container {
+    grid-column: 1/13;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
 }

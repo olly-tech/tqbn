@@ -1,6 +1,4 @@
 
-let score = "0";
-
 function checkAnswers() {
     let score=0;
     let result=0;
@@ -10,58 +8,58 @@ let quiz1 = document.forms.quiz1.elements;
 
 ans1 = quiz1.colour.value;
 if (ans1=="pink") {
-    score = score + 1;
+    score += 1;
 }
 else if (ans1=="yellow") {
-    score = score + 2;
+    score += 2;
 }
 else if (ans1=="green") {
-    score = score + 3;
+    score += 3;
 }
 else {
-    score = score + 4;
+    score += 4;
 }
 
 ans2=quiz1.animal.value;
 if (ans2=="gorilla") {
-    score = score + 1;
+    score += 1;
 }
 else if (ans2=="red-panda") {
-    score = score + 2;
+    score += 2;
 }
 else if (ans2=="jaguar") {
-    score = score + 3;
+    score += 3;
 }
 else {
-    score = score + 4;
+    score += 4;
 }
 
 ans3=quiz1.music.value;
 if (ans3=="pop") {
-    score = score + 1;
+    score += 1;
 }
 else if (ans3=="hiphop") {
-    score = score + 2;
+    score += 2;
 }
 else if (ans3=="rock") {
-    score = score + 3;
+    score += 3;
 }
 else {
-    score = score + 4;
+    score += 4;
 }
 
 ans4=quiz1.hobby.value;
 if (ans4=="walk") {
-    score = score + 1;
+    score += 1;
 }
 else if (ans4=="read") {
-    score = score + 2;
+    score += 2;
 }
 else if (ans4=="music") {
-    score = score + 3;
+    score += 3;
 }
 else {
-    score = score + 4;
+    score += 4;
 }
 
 if(score<6){
@@ -75,5 +73,23 @@ if(score<6){
 }
 
 let text = "You should read: " + result;
-document.getElementById("result1").innerHTML=text;
+
+function responsiveResult(x) {
+    if (x.matches) {
+        document.getElementById("result1-mobile").style.padding = "0.65em";
+        document.getElementById("result1-mobile").innerHTML=text;
+        document.getElementById("result1").style.display = "none";
+        document.getElementById("result1-mobile").style.display = "block";
+    } else {
+        document.getElementById("result1").style.padding = "0.65em";
+        document.getElementById("result1").innerHTML=text;
+        document.getElementById("result1-mobile").style.display = "none";
+        document.getElementById("result1").style.display = "block";
+
+}}
+const mediaObj = window.matchMedia("(max-width:600px)");
+responsiveResult(mediaObj);
+mediaObj.addEventListener("change", function() {
+    responsiveResult(mediaObj);
+})
 }

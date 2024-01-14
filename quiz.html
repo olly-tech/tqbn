@@ -35,12 +35,13 @@
             <hr class="solid-divider purple-border" />
           </div>
         <main class="grid-container">
-            <section class="quiz-description"> <!--PARAGRAPH-->
+          <section class="quiz-container">
+            <header class="quiz-description"> <!--PARAGRAPH-->
                 <h2> Which Book Should I Read? </h2>
                 <br>
                 <img class="quiz-image" src="Images/book-covers/coming-soon-percy-jackson.png" alt="quiz book cover image">
                 <p id="result1" class="answer-display"></p>
-            </section>
+            </header>
             <section class="quiz-index">
                 <form name="quiz1">
                     <br>
@@ -105,8 +106,10 @@
                     </fieldset>
                     <br>
                     <button type="button" class="submit-button" onclick="checkAnswers()">Submit</button>
+                    <p id="result1-mobile" class="answer-display"></p>
                 </form>
                 <br>
+            </section>
             </section>
         </main>
         <footer class="footer">

@@ -17,3 +17,13 @@ An LGBT+ book review website created during web development course, using HTML, 
 - Added new specific review pages, and linked them to their correct image or card on any webpage.
 - Added appropriate external and internal links.
 - Created a rainbow stripe using a HTML div and CSS only, applying this to the site to section it out while keeping in theme. 
+
+## Updated after second code review of site
+- minor edits to ensure consistency across site.
+- removed link functionality to coming soon cards on 'All Reviews' page.
+- removed unused JS file from HTML. 
+- removed duplicate variable declarations. 
+- reduced JS code by using addition assignment operator. 
+- added <figure> semantic tags and alt tags on social media icons for increased accessibility.
+- edited quiz response display to make it's appearance more obvious. 
+- added function to change location of result appearance based on viewport width. 
