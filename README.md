@@ -27,3 +27,6 @@ An LGBT+ book review website created during web development course, using HTML, 
 - added <figure> semantic tags and alt tags on social media icons for increased accessibility.
 - edited quiz response display to make it's appearance more obvious. 
 - added function to change location of result appearance based on viewport width. 
+
+## Updated after third code review of site
+- changed image for quiz page to better reflect quiz

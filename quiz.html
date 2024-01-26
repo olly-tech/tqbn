@@ -1,153 +1,186 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-gb">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title> TQBN:Quiz </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="quiz page for LGBT+ book review site">
-        <meta name="keywords" content="LGBT+, queer, 18-25, 25+, adults, books,YA, young adult, novels, fiction, non-fiction, reviews">
-        <link rel="icon" type="image/png" href="Images/icons&headers/icon.png">
-        <script src="script.js"></script>
-    </head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>TQBN:Quiz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="quiz page for LGBT+ book review site" />
+    <meta
+      name="keywords"
+      content="LGBT+, queer, 18-25, 25+, adults, books,YA, young adult, novels, fiction, non-fiction, reviews"
+    />
+    <link rel="icon" type="image/png" href="Images/icons&headers/icon.png" />
+    <script src="script.js"></script>
+  </head>
 
-    <body>
-        <nav>
-            <ul class="topnav">
-              <li><a class="lred-fill" href="index.html">Home</a></li>
-              <li>
-                <a class="lyellow-fill" href="all-review.html">All Reviews</a>
-              </li>
-              <li><a class="lgreen-fill" href="review-tco.html">Featured Review</a></li>
-              <li><a class="active blue-fill" href="quiz.html">Quizzes</a></li>
-            </ul>
-          </nav>
-        
-        <header class="header">
-            <h1>Quizzes</h1>
-            <h2 class="mini-header">The Queer Book Nook</h2>
+  <body>
+    <nav>
+      <ul class="topnav">
+        <li><a class="lred-fill" href="index.html">Home</a></li>
+        <li>
+          <a class="lyellow-fill" href="all-review.html">All Reviews</a>
+        </li>
+        <li>
+          <a class="lgreen-fill" href="review-tco.html">Featured Review</a>
+        </li>
+        <li><a class="active blue-fill" href="quiz.html">Quizzes</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <h1>Quizzes</h1>
+      <h2 class="mini-header">The Queer Book Nook</h2>
+    </header>
+    <div>
+      <hr class="solid-divider red-border" />
+      <hr class="solid-divider yellow-border" />
+      <hr class="solid-divider green-border" />
+      <hr class="solid-divider blue-border" />
+      <hr class="solid-divider purple-border" />
+    </div>
+    <main class="grid-container">
+      <section class="quiz-container">
+        <header class="quiz-description">
+          <!--PARAGRAPH-->
+          <h2>Which Book Should I Read?</h2>
+          <br />
+          <img
+            class="quiz-image"
+            src="Images/quiz_image.jpg"
+            alt="quiz book cover image"
+          />
+          <p id="result1" class="answer-display"></p>
         </header>
-        <div>
-            <hr class="solid-divider red-border" />
-            <hr class="solid-divider yellow-border" />
-            <hr class="solid-divider green-border" />
-            <hr class="solid-divider blue-border" />
-            <hr class="solid-divider purple-border" />
-          </div>
-        <main class="grid-container">
-          <section class="quiz-container">
-            <header class="quiz-description"> <!--PARAGRAPH-->
-                <h2> Which Book Should I Read? </h2>
-                <br>
-                <img class="quiz-image" src="Images/book-covers/coming-soon-percy-jackson.png" alt="quiz book cover image">
-                <p id="result1" class="answer-display"></p>
-            </header>
-            <section class="quiz-index">
-                <form name="quiz1">
-                    <br>
-                    <fieldset class="question1">
-                        <legend>What is your favourite colour?</legend>
-                        <input type="radio" name="colour" id="pink" value="pink">
-                        <label for = "pink">Pink</label>
+        <section class="quiz-index">
+          <form name="quiz1">
+            <br />
+            <fieldset class="question1">
+              <legend>What is your favourite colour?</legend>
+              <input type="radio" name="colour" id="pink" value="pink" />
+              <label for="pink">Pink</label>
 
-                        <input type="radio" name="colour" id="blue" value="blue">
-                        <label for = "blue">Blue</label>
+              <input type="radio" name="colour" id="blue" value="blue" />
+              <label for="blue">Blue</label>
 
-                        <input type="radio" name="colour" id="yellow" value="yellow">
-                        <label for = "yellow">Yellow</label>
+              <input type="radio" name="colour" id="yellow" value="yellow" />
+              <label for="yellow">Yellow</label>
 
-                        <input type="radio" name="colour" id="green" value="green">
-                        <label for = "green">Green</label>
-                    </fieldset>
-                    <br>
-                    <fieldset class="question2">
-                        <legend>What is your favourite animal?</legend>
-                        <input type="radio" name="animal" id="red-panda" value="red-panda">
-                        <label for = "red-panda">Red Panda</label>
+              <input type="radio" name="colour" id="green" value="green" />
+              <label for="green">Green</label>
+            </fieldset>
+            <br />
+            <fieldset class="question2">
+              <legend>What is your favourite animal?</legend>
+              <input
+                type="radio"
+                name="animal"
+                id="red-panda"
+                value="red-panda"
+              />
+              <label for="red-panda">Red Panda</label>
 
-                        <input type="radio" name="animal" id="gorilla" value="gorilla">
-                        <label for = "gorilla">Gorilla</label>
+              <input type="radio" name="animal" id="gorilla" value="gorilla" />
+              <label for="gorilla">Gorilla</label>
 
-                        <input type="radio" name="animal" id="jaguar" value="jaguar">
-                        <label for = "jaguar">Jaguar</label>
+              <input type="radio" name="animal" id="jaguar" value="jaguar" />
+              <label for="jaguar">Jaguar</label>
 
-                        <input type="radio" name="animal" id="giraffe" value="giraffe">
-                        <label for = "giraffe">Giraffe</label>
-                    </fieldset>
-                    <br>
-                    <fieldset class="question3">
-                        <legend>What is your favourite music?</legend>
-                        <input type="radio" name="music" id="pop" value="pop">
-                        <label for = "pop">Pop</label>
+              <input type="radio" name="animal" id="giraffe" value="giraffe" />
+              <label for="giraffe">Giraffe</label>
+            </fieldset>
+            <br />
+            <fieldset class="question3">
+              <legend>What is your favourite music?</legend>
+              <input type="radio" name="music" id="pop" value="pop" />
+              <label for="pop">Pop</label>
 
-                        <input type="radio" name="music" id="hiphop" value="hiphop">
-                        <label for = "hiphop">Hip Hop</label>
+              <input type="radio" name="music" id="hiphop" value="hiphop" />
+              <label for="hiphop">Hip Hop</label>
 
-                        <input type="radio" name="music" id="rock" value="rock">
-                        <label for = "rock">Rock</label>
+              <input type="radio" name="music" id="rock" value="rock" />
+              <label for="rock">Rock</label>
 
-                        <input type="radio" name="music" id="metal" value="metal">
-                        <label for = "metal">Metal</label>
-                    </fieldset>
-                    <br>
-                    <fieldset class="question4">
-                        <legend>What is your favourite hobby?</legend>
-                        <input type="radio" name="hobby" id="walk" value="walk">
-                        <label for = "walk">Walk</label>
-                        
-                        <input type="radio" name="hobby" id="read" value="read">
-                        <label for = "read">Read</label>
-                        
-                        <input type="radio" name="hobby" id="music" value="music">
-                        <label for = "music">Music</label>
-                        
-                        <input type="radio" name="hobby" id="exercise" value="exercise">
-                        <label for = "exercise">Exercise</label>
-                    </fieldset>
-                    <br>
-                    <button type="button" class="submit-button" onclick="checkAnswers()">Submit</button>
-                    <p id="result1-mobile" class="answer-display"></p>
-                </form>
-                <br>
-            </section>
-            </section>
-        </main>
-        <footer class="footer">
-            <div>
-              <hr class="solid-divider red-border" />
-              <hr class="solid-divider yellow-border" />
-              <hr class="solid-divider green-border" />
-              <hr class="solid-divider blue-border" />
-              <hr class="solid-divider purple-border" />
-            </div>
-            <section>
-              <h2>© The Queer Book Nook 2023</h2>
-            </section>
-            <section class="image-credits">
-              <h3>Image Credits</h3>
-              <ul class="img-cred-list">
-                <li>
-                  Book Covers taken from <a
-                    href="https://www.waterstones.com/"
-                    target="_blank"
-                    >Waterstones</a>
-                </li>
-                <li>
-                  Header Image by
-                  <a
-                    href="https://unsplash.com/@edsonrosas?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                    target="_blank"
-                    >Edson Rosas</a
-                  >
-                  on
-                  <a
-                    href="https://unsplash.com/photos/rainbow-book-art-R2GAnaP8fEk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                    target="_blank"
-                    >Unsplash</a
-                  >
-                </li>
-              </ul>
-            </section>
-          </footer>
-    </body>
+              <input type="radio" name="music" id="metal" value="metal" />
+              <label for="metal">Metal</label>
+            </fieldset>
+            <br />
+            <fieldset class="question4">
+              <legend>What is your favourite hobby?</legend>
+              <input type="radio" name="hobby" id="walk" value="walk" />
+              <label for="walk">Walk</label>
+
+              <input type="radio" name="hobby" id="read" value="read" />
+              <label for="read">Read</label>
+
+              <input type="radio" name="hobby" id="music" value="music" />
+              <label for="music">Music</label>
+
+              <input type="radio" name="hobby" id="exercise" value="exercise" />
+              <label for="exercise">Exercise</label>
+            </fieldset>
+            <br />
+            <button
+              type="button"
+              class="submit-button"
+              onclick="checkAnswers()"
+            >
+              Submit
+            </button>
+            <p id="result1-mobile" class="answer-display"></p>
+          </form>
+          <br />
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>
+        <hr class="solid-divider red-border" />
+        <hr class="solid-divider yellow-border" />
+        <hr class="solid-divider green-border" />
+        <hr class="solid-divider blue-border" />
+        <hr class="solid-divider purple-border" />
+      </div>
+      <section>
+        <h2>© The Queer Book Nook 2023</h2>
+      </section>
+      <section class="image-credits">
+        <h3>Image Credits</h3>
+        <ul class="img-cred-list">
+          <li>
+            Book Covers taken from
+            <a href="https://www.waterstones.com/" target="_blank"
+              >Waterstones</a
+            >
+          </li>
+          <li>
+            Header Image by
+            <a
+              href="https://unsplash.com/@edsonrosas?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank"
+              >Edson Rosas</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/rainbow-book-art-R2GAnaP8fEk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank"
+              >Unsplash</a
+            >
+          </li>
+          <li>
+            Photo by
+            <a
+              href="https://unsplash.com/@jaredd?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Jaredd Craig</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/view-of-floating-open-book-from-stacked-books-in-library-HH4WBGNyltc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>
